@@ -1,6 +1,7 @@
-%define realname	JSON-XS
-%define name		perl-%{realname}
-%define version		2.21
+%define module	JSON-XS
+%define name		perl-%{module}
+%define version     2.22.2
+%define up_version  2.222
 %define release		%mkrel 1
 
 Summary:	JSON (JavaScript Object Notation) serialization
@@ -9,8 +10,8 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{realname}/
-Source:		http://search.cpan.org/CPAN/authors/id/M/MA/MAKAMAKA/%{realname}-%{version}.tar.gz
+URL:		http://search.cpan.org/dist/%{module}/
+Source:     http://www.cpan.org/modules/by-module/JSON/%{module}-%{up_version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTTP::Request)
 BuildRequires:	perl(HTTP::Response)
@@ -22,7 +23,7 @@ Buildroot:	%{_tmppath}/%{name}-%{version}
 JSON serialising/deserialising, done correctly and fast.
 
 %prep
-%setup -q -n %{realname}-%{version}
+%setup -q -n %{module}-%{up_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
