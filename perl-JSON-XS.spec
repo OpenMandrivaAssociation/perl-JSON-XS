@@ -1,6 +1,6 @@
 %define module	JSON-XS
 %define name		perl-%{module}
-%define version     2.2222
+%define version     2311
 %define up_version  2.222
 %define release		%mkrel 1
 
