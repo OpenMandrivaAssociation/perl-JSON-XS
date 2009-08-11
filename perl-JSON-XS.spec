@@ -1,5 +1,5 @@
 %define upstream_name	JSON-XS
-%define upstream_version  2.24
+%define upstream_version  2.25
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -46,4 +46,3 @@ rm -rf %{buildroot}
 %{_bindir}/json_xs
 %{perl_vendorarch}/JSON*
 %{perl_vendorarch}/auto/JSON/XS/*
-
