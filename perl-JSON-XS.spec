@@ -12,10 +12,11 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}/
 Source0:    http://www.cpan.org/modules/by-module/JSON/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:  perl(CGI)
 BuildRequires:	perl(HTTP::Request)
 BuildRequires:	perl(HTTP::Response)
 BuildRequires:	perl(Test::More)
-BuildRequires:  perl(CGI)
+BuildRequires:  perl(common::sense)
 BuildRequires:	perl-devel
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
