@@ -1,9 +1,9 @@
-%define upstream_name	JSON-XS
+%define upstream_name	 JSON-XS
 %define upstream_version 2.27
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 Epoch:      1
 
 Summary:	JSON (JavaScript Object Notation) serialization
@@ -18,7 +18,10 @@ BuildRequires:	perl(HTTP::Response)
 BuildRequires:	perl(Test::More)
 BuildRequires:  perl(common::sense)
 BuildRequires:	perl-devel
+
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
+
+Requires:   perl(common::sense)
 
 %description
 JSON serialising/deserialising, done correctly and fast.
@@ -28,10 +31,10 @@ JSON serialising/deserialising, done correctly and fast.
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%__make
+%make
 
 %check
-%__make test
+%make test
 
 %install
 rm -rf %{buildroot}
