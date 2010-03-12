@@ -1,9 +1,9 @@
 %define upstream_name	 JSON-XS
-%define upstream_version 2.27
+%define upstream_version 2.28
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 Epoch:      1
 
 Summary:	JSON (JavaScript Object Notation) serialization
