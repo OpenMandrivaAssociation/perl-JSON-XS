@@ -1,2 +1,4 @@
+removed_sources:
+  JSON-XS-2.3.tar.gz: 2d66b92750c2440243669bacd42355756c0b5efc
 sources:
-  "JSON-XS-2.3.tar.gz": 2d66b92750c2440243669bacd42355756c0b5efc
+  JSON-XS-2.34.tar.gz: ff86aae36de4cfeb78593cef9a85fe7e0e9ad339

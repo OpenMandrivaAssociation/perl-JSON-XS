@@ -1,16 +1,16 @@
 %define upstream_name	 JSON-XS
-%define upstream_version 2.3
+%define upstream_version 2.34
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 2.34
+Release:	1
 Epoch:      1
 
 Summary:	JSON (JavaScript Object Notation) serialization
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:    http://www.cpan.org/modules/by-module/JSON/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/JSON/JSON-XS-2.34.tar.gz
 
 BuildRequires:  perl(CGI)
 BuildRequires:	perl(HTTP::Request)
@@ -112,5 +112,6 @@ rm -rf %{buildroot}
 * Mon Jun 16 2008 Adam Williamson <awilliamson@mandriva.org> 2.21-1mdv2009.0
 + Revision: 220523
 - import perl-JSON-XS
+
 
 
