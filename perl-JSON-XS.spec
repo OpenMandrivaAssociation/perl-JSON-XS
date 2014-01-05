@@ -1,8 +1,8 @@
 %define upstream_name	 JSON-XS
-%define upstream_version 2.34
+%define upstream_version 3.01
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 2.34
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 Epoch:      1
 
@@ -10,7 +10,7 @@ Summary:	JSON (JavaScript Object Notation) serialization
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:    http://www.cpan.org/modules/by-module/JSON/JSON-XS-2.34.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/JSON/JSON-XS-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(CGI)
 BuildRequires:	perl(HTTP::Request)
@@ -19,7 +19,6 @@ BuildRequires:	perl(Test::More)
 BuildRequires:  perl(common::sense)
 BuildRequires:	perl-devel
 
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 Requires:   perl(common::sense)
 
@@ -37,11 +36,9 @@ JSON serialising/deserialising, done correctly and fast.
 %make test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %clean 
-rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
@@ -112,6 +109,7 @@ rm -rf %{buildroot}
 * Mon Jun 16 2008 Adam Williamson <awilliamson@mandriva.org> 2.21-1mdv2009.0
 + Revision: 220523
 - import perl-JSON-XS
+
 
 
 
