@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 2.34
-Release:	2
+Release:	3
 Epoch:      1
 
 Summary:	JSON (JavaScript Object Notation) serialization
