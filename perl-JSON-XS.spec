@@ -1,5 +1,5 @@
 %define upstream_name JSON-XS
-%define upstream_version 3.02
+%define upstream_version 4.02
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
