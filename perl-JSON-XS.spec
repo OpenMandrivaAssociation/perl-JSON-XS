@@ -27,13 +27,11 @@ JSON serialising/deserialising, done correctly and fast.
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
-%check
-%make test
 
 %install
-%makeinstall_std
+%make_install
 
 
 %files
