@@ -16,6 +16,7 @@ BuildRequires:	perl(HTTP::Response)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(common::sense)
 BuildRequires:	perl-devel
+BuildRequires:  perl(Canary::Stability)
 Requires:	perl(common::sense)
 
 %description
