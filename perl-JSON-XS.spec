@@ -1,9 +1,9 @@
 %define upstream_name JSON-XS
-%define upstream_version 4.02
+%define upstream_version 4.03
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 Epoch:		1
 Summary:	JSON (JavaScript Object Notation) serialization
 License:	GPL+ or Artistic
@@ -29,10 +29,8 @@ JSON serialising/deserialising, done correctly and fast.
 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
-
 %install
 %make_install
-
 
 %files
 %doc Changes README
