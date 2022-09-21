@@ -1,3 +1,4 @@
+%define _empty_manifest_terminate_build 0
 %define upstream_name JSON-XS
 %define upstream_version 4.03
 
