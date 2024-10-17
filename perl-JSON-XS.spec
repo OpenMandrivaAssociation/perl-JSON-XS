@@ -9,7 +9,7 @@ Epoch:		1
 Summary:	JSON (JavaScript Object Notation) serialization
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{upstream_name}/
+URL:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/JSON/JSON-XS-%{upstream_version}.tar.gz
 BuildRequires:	perl(CGI)
 BuildRequires:	perl(HTTP::Request)
