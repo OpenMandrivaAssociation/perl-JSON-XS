@@ -4,7 +4,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	4
 Epoch:		1
 Summary:	JSON (JavaScript Object Notation) serialization
 License:	GPL+ or Artistic
