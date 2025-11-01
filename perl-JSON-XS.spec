@@ -1,16 +1,14 @@
-%define _empty_manifest_terminate_build 0
+#define _empty_manifest_terminate_build 0
 %define upstream_name JSON-XS
-%define upstream_version 4.03
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
-Epoch:		1
+Version:	4.04
+Release:	1
 Summary:	JSON (JavaScript Object Notation) serialization
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/JSON/JSON-XS-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/JSON/JSON-XS-%{version}.tar.gz
 BuildRequires:	perl(CGI)
 BuildRequires:	perl(HTTP::Request)
 BuildRequires:	perl(HTTP::Response)
@@ -24,10 +22,10 @@ Requires:	perl(common::sense)
 JSON serialising/deserialising, done correctly and fast.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
-perl Makefile.PL INSTALLDIRS=vendor
+PERL_CANARY_STABILITY_NOPROMPT=1 perl Makefile.PL INSTALLDIRS=vendor
 %make_build
 
 %install
