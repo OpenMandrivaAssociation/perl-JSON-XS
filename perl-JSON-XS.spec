@@ -9,6 +9,7 @@ License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/JSON/JSON-XS-%{version}.tar.gz
+BuildRequires:	make
 BuildRequires:	perl(CGI)
 BuildRequires:	perl(HTTP::Request)
 BuildRequires:	perl(HTTP::Response)
