@@ -3,7 +3,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	4.04
-Release:	3
+Release:	4
 Summary:	JSON (JavaScript Object Notation) serialization
 License:	GPL+ or Artistic
 Group:		Development/Perl
